@@ -1,0 +1,10 @@
+services:
+  dbpostgres:
+    image: postgres:14.2
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: fastify
+      POSTGRES_USER: fastify
+      POSTGRES_DB: course
+    ports:
+      - "5433:5432"
